@@ -4,6 +4,7 @@ services:
     image: maven
     volumes: 
       - ./src:/app
+      - ~/.m2:/root/.m2
     ports:
       - 8080:8080
     tty: true
